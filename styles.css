@@ -1,37 +1,38 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 header h1 {
     margin: 0;
-}
-
-header p {
-    font-size: 1.2em;
-    margin-top: 5px;
+    font-size: 2em;
+    color: #2c3e50;
 }
 
 section {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
 }
 
 h2 {
-    color: #333;
+    color: #2c3e50;
+    font-size: 1.5em;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 5px;
 }
 
 ul {
@@ -40,30 +41,37 @@ ul {
 }
 
 ul li {
-    background: url('checkmark.png') no-repeat left center;
-    background-size: 20px 20px;
-    padding-left: 30px;
-    margin-bottom: 10px;
-    line-height: 1.6;
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
 }
 
-#download .btn {
+ul li:before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #2c3e50;
+}
+
+.btn {
     display: inline-block;
     padding: 10px 20px;
+    background-color: #2c3e50;
     color: white;
-    background-color: #007BFF;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
-#download .btn:hover {
-    background-color: #0056b3;
+.btn:hover {
+    background-color: #1a242f;
 }
 
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #333;
-    color: white;
+    font-size: 0.8em;
+    color: #777;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
 }
